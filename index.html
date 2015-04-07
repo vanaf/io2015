@@ -1,0 +1,321 @@
+<!--
+Copyright 2015 Google Inc. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+  http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Event">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+  <meta name="google-site-verification" content="AdXcVeRpEoy56o6g9c0lls3IiAATCVtB45HWJFwZmsM" />
+  <title>Google I/O 2015</title>
+
+  
+  <link rel="manifest" href="manifest.json">
+  
+  <meta name="theme-color" content="#eceff1">
+
+  
+  <meta name="mobile-web-app-capable" content="yes"> 
+  <meta name="application-name" content="Google I/O 2015"> 
+
+  <link rel="icon" sizes="192x192" href="https://events.google.com/io2015/images/touch/homescreen192.png">
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Google I/O 2015">
+
+  
+  <link rel="shortcut icon" href="https://events.google.com/io2015/images/touch/homescreen72-fav.png">
+  <link rel="apple-touch-icon" href="https://events.google.com/io2015/images/touch/homescreen48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://events.google.com/io2015/images/touch/homescreen72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="https://events.google.com/io2015/images/touch/homescreen96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://events.google.com/io2015/images/touch/homescreen144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="https://events.google.com/io2015/images/touch/homescreen192.png">
+
+  
+  <meta name="msapplication-TileImage" content="https://events.google.com/io2015/images/touch/homescreen144.png">
+  <meta name="msapplication-TileColor" content="#eceff1">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  
+  <meta itemprop="name" content="Google I/O 2015">
+  <meta itemprop="description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta itemprop="image" content="https://events.google.com/io2015/images/io15-color.png">
+  
+  <meta itemprop="startDate" content="2015-05-28T16:00:00Z">
+  <meta itemprop="endDate" content="2015-05-29T23:59:59Z">
+
+  
+  <meta property="og:title" content="Google I/O 2015">
+  <meta property="og:site_name" content="Google I/O 2015">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/io2015">
+  <meta property="og:description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta property="og:type" content="Event">
+  <meta property="og:image" content="https://events.google.com/io2015/images/io15-color.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@googledevs">
+  <meta name="twitter:title" content="Google I/O 2015">
+  <meta name="twitter:description" content="Google I/O 2015 brings together developers for an immersive, two-day experience focused on exploring the next generation of technology, mobile and beyond. Join us online or in person May 28-29, 2015.">
+  <meta name="twitter:image:src" content="https://events.google.com/io2015/images/io15-color.png">
+
+  
+  <script>
+    window.ENV = "prod"; 
+    window.PREFIX = "/io2015";
+  </script>
+  <script src="https://events.google.com/io2015/scripts/analytics.js"></script>
+
+  <script>
+  (function() {
+    "use strict";
+
+    
+    window.onerror = function(message, file, lineNumber, columnNumber, error) {
+      
+      try {
+        
+        if (error !== undefined) {
+          message = error.stack;
+        }
+
+        IOWA.Analytics.trackError(file + ':' + lineNumber, message);
+      } catch (e) {
+        
+      }
+    };
+
+    
+
+    function getUrlParameter(param) {
+      if (!window.location.search) {
+        return;
+      }
+      var m = new RegExp(param + '=([^&]*)').exec(window.location.search.substring(1));
+      if (!m) {
+        return;
+      }
+      return decodeURIComponent(m[1]);
+    }
+
+    
+    
+    var ignoreCheck = getUrlParameter('ignore_browser_check') == 'true';
+
+    
+    
+    
+    
+    var supported = ignoreCheck || (function whatBrowserYouBe() {
+      var uaString = navigator.userAgent;
+
+      
+      var msie = /MSIE +([\d\.]+)/.exec(uaString);
+      if (msie && msie[1]) {
+        if (msie[1] === '7.0') {
+          var tridentVersion = /Trident\/(\d.\d)/.exec(uaString);
+          if (tridentVersion && tridentVersion[1]) {
+            return parseInt(tridentVersion[1], 10) >= 6;
+          } else {
+            return false;
+          }
+        } else {
+          return parseInt(msie[1], 10) >= 10;
+        }
+      }
+      
+      if (uaString.indexOf('Chrome') === -1 && uaString.indexOf('Android') !== -1) {
+        return !/^Google/.test(navigator.vendor);
+      }
+      
+      if (uaString.indexOf('Opera') !== -1) {
+        return false;
+      }
+      
+      return true;
+    })();
+
+    if (!supported) {
+      
+      IOWA.Analytics.trackEvent('Polymer', 'unsupported-browser', null, null, function() {
+        window.location = "/io2015/upgrade";
+      });
+    }
+  })();
+  </script>
+
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://events.google.com/io2015/styles/main.css">
+  <link rel="stylesheet" href="https://events.google.com/io2015/styles/main_sd.css" shim-shadowdom>
+
+  <script src="https://events.google.com/io2015/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="https://events.google.com/io2015/elements/elements.html">
+
+  <link rel="canonical" href="/io2015/">
+</head>
+<body id="page-home">
+
+
+<div class="io-logo-container">
+  <io-logo width="312" height="165" page="home" class="bg-medium-grey"></io-logo>
+  <div class="bg-medium-grey" iologobackground></div>
+</div>
+
+<core-drawer-panel forceNarrow>
+  <div drawer layout vertical>
+    <core-toolbar class="tall bg-cyan">
+      <div class="top io-logo" flex></div>
+      <div class="bottom">
+        <div class="typo-white"><i18n-msg msgid="iodate">May 28 - 29</i18-msg>, 2015</div>
+        <div>Kovcheg, Saratov</div>
+      </div>
+    </core-toolbar>
+    <div class="drawer-panel-content" flex>
+    </div>
+  </div>
+  <div main>
+
+    <div id="content-container">
+
+    <template is="auto-binding" id="t">
+
+      
+      <core-media-query id="mq-phone" query="(min-width:320px) and (max-width:767px)"
+                        queryMatches="{{isPhoneSize}}"></core-media-query>
+      <core-media-query id="mq-tablet" query="(min-width:768px) and (max-width:944px)"
+                        queryMatches="{{isTabletSize}}"></core-media-query>
+      <core-media-query id="mq-desktop" query="(min-width:945px)"
+                        queryMatches="{{isDesktopSize}}"></core-media-query>
+
+      <header class="masthead bg-medium-grey js-experiment-instrument js-experiment-instrument--no-top-margin" layout vertical style="min-height:370px;height:370px">
+        <div class="masthead__ripple">
+          <div class="masthead__ripple__content" id="masthead-ripple"></div>
+        </div>
+        <core-toolbar id="navbar" class="{{ {'core-narrow': isPhoneSize} | tokenList }}" role="navigation">
+          <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
+          <div flex disabled?="{{selectedPage === 'home'}}">
+            <a class="io-logo-link" href="./" data-ajax-link data-track-link="nav-home" data-anim-ripple aria-label="Home" aria-hidden="{{selectedPage === 'home'}}"
+            tabindex="{{selectedPage === 'home' ? -1 : 0}}">
+              <div on-transitionend="{{manageHomeFocus}}" on-webkittransitionend="{{manageHomeFocus}}" class="io-logo"></div>
+            </a>
+          </div>
+        </core-toolbar>
+        <div class="masthead-container" flex end?="{{!isPhoneSize}}" layout vertical?="{{isPhoneSize}}" horizontal?="{{isDesktopSize || isTabletSize}}">
+          <div class="io-logo large" iologodestination></div>
+          <div class="masthead-meta {{ {transition: pageTransitioningOut} | tokenList }}" layout vertical end-justified?="{{isPhoneSize}}" flex>
+            <template id="template-masthead-container" ref="" bind>
+  <h2 class="masthead-title"><i18n-msg msgid="iodate">May 28 - 29</i18n-msg>, 2015</h2>
+  <h4 class="masthead-subtitle">Kovcheg, Saratov, RU</h4>
+</template>
+          </div>
+        </div>
+        <experiment-fab-container mini?="{{isPhoneSize}}" mode="{{mode}}" playmode="{{playmode}}" recordmode="{{recordmode}}" direction="{{direction}}"></experiment-fab-container>
+      </header>
+
+      <main class="io-main {{ {transitionIn: pageTransitioningIn, transitionOut: pageTransitioningOut} | tokenList }}" >
+        <template id="template-content-container" ref="" bind>
+  <core-toolbar class="navbar__overlay navbar__overlay--video" aria-hidden="{{!fullscreenVideoActive}}" fit>
+    <paper-icon-button icon="arrow-back" on-tap="{{closeVideoCard}}" aria-label="Close video"></paper-icon-button>
+    <span flex><i18n-msg msgid="watch-recap-video">Watch the 2014 I/O Recap Video</i18n-msg></span>
+  </core-toolbar>
+
+
+
+  <div>
+
+    <section id="registration" class="page__section js-experiment-instrument js-experiment-instrument--no-top-margin bg-cyan">
+      <h2 tabindex="0">I/O begins May 28 at 19:00 MSK</h2>
+
+      
+
+      <div class="io-countdown" layout vertical center>
+        <countdown-timer bgcolor="#00BCD4"
+                         date="May 28 2015 09:00:00 GMT-0700 (PDT)"
+                         dateadjustment="5" easeintime="490" waittime="200"
+                         easeouttime="390" autoStart="yes"
+                         thresholdInformation="{{thresholdInfo}}"
+                         on-timerthreshold="{{onCountdownTimerThreshold}}"
+                         value="{{countdownValue}}">
+        </countdown-timer>
+
+        <template if="{{thresholdInfo.thresholdDays}}">
+          <h4 class="countdown-label"><a href="schedule" data-ajax-link>Day<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
+        </template>
+
+        <template if="{{thresholdInfo.thresholdHours}}">
+          <h4 class="countdown-label"><a href="schedule" data-ajax-link>Hour<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
+        </template>
+
+        <template if="{{thresholdInfo.thresholdMinutes}}">
+          <h4 class="countdown-label"><a href="schedule" data-ajax-link>Minute<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
+        </template>
+
+        <template if="{{thresholdInfo.thresholdSeconds}}">
+          <h4 class="countdown-label"><a href="schedule" data-ajax-link>Second<span hidden?="{{countdownValue === 1}}">s</span> until I/O begins</a></h4>
+        </template>
+
+      </div>
+
+    </section>
+
+
+
+  </div>
+
+
+</template>
+      </main>
+
+      <footer layout vertical>
+      </footer>
+
+
+    </template>
+
+    </div>
+  </div>
+</core-drawer-panel>
+
+<io-toast id="toast" duration="9000"></io-toast>
+
+<script src="https://events.google.com/io2015/scripts/site-scripts.js"></script>
+<script>
+(function() {
+
+  
+  
+  function init() {
+    if (typeof window._initPage == 'function') {
+      window._initPage();
+      window._initPage = null;
+    }
+  }
+
+  if (IOWA.Util.supportsHTMLImports) {
+    init();
+  } else {
+    document.addEventListener('polymer-ready', init);
+  }
+
+})();
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="height:100%">
+  <head>
+    <title>IO</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <script>
+	function fitIO(){
+		document.getElementById('io').style.width=document.getElementById('io_cell').offsetWidth+"px";
+        }
+        function redrawForm(){
+                document.getElementById('gform').style.webkitTransform='scale(1)';
+        }
+    </script>
+  </head>
+  <body style="height:100%;margin:0px;" onload="fitIO();redrawForm();" onresize="fitIO()">
+<table border="0" width=100% height="100%" marginheight="0" marginwidth="0" style="border-spacing: 0px;">
+<tr valign="top" height="100%" marginheight="0" marginwidth="0">
+<td style="padding:0px" id="io_cell">
+<iframe id="io" src="index.html" style="position: absolute; width: 500px; height: 100%;" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+</td>
+<td width="705" marginheight="0" marginwidth="0" style="padding:0px">
+<iframe id="gform" src="https://docs.google.com/forms/d/1FwgTyLfHv9fjBVX3jJRm8FyiEIMFqD-roNcSRekrWt4/viewform?embedded=true" style="position: absolute; width: 705px; height: 100%;" frameborder="0" marginheight="0" marginwidth="0" onmousewheel="redrawForm()">
+Форма регистрации на Google I/O Extended
+</iframe>
+</td>
+</tr>
+</table>
+    <script>
+       fitIO();
+    </script>
+
+  </body>
+</html>
